@@ -117,11 +117,14 @@ body{
                 background-size: 500px;}
 .Tarjeta03   { background-image: url(Img/Personajes/Fondo03.jpg) !important; 
                 background-size: 500px;}
-.Tarjeta04 { background-image: url(Img/Personajes/Fondo04.jpg) !important; 
+.Tarjeta04   { background-image: url(Img/Personajes/Fondo04.jpg) !important; 
                 background-size: 500px;}
 .Tarjeta05   { background-image: url(Img/Personajes/Fondo05.jpg) !important; 
                 background-size: 500px;}
-.Tarjeta06   { background-color: #D1111B !important; }
+.Tarjeta06   { background-image: url(Img/Personajes/Fondo06.jpg) !important; 
+                background-size: 500px;}
+.Tarjeta07   { background-image: url(Img/Personajes/Fondo07.jpg) !important; 
+                background-size: 500px;}
 
 /*Celular*/
 @media (max-width: 768px) {

@@ -57,7 +57,7 @@
 
           
                         <li class="nav-item">
-                            <a class="nav-link active" href="Personajes.html">
+                            <a class="nav-link" href="Personajes.html">
                                 <i class="bi bi-people-fill me-1"></i> Personajes
                             </a>
                         </li>
@@ -65,7 +65,7 @@
           
                         <li class="nav-item dropdown">
 
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
                                 <i class="bi bi-collection-play-fill me-1"></i> Recursos
                             </a>
           
@@ -123,7 +123,7 @@
 
                         <div class="modal-header bg-success text-white">
                            
-                            <h5 class="modal-title fw-bold">Nivel 01 - Explora el escenario</h5>
+                            <h5 class="modal-title fw-bold">Nivel 01 - Introducción</h5>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
 
                         </div>
@@ -133,13 +133,17 @@
         
                             <img src="Img/Mundo/Rural/Nivel01.1.png" alt="Primer_fondo" class="img-fluid w-100 rounded-bottom">
 
-                            <button type="button" class="btn btn-warning btn-interactivo btn-personaje" data-bs-toggle="tooltip" data-bs-placement="top" title="Nuestro Héroe 🦸‍♂️: Es el encargado de cuidar las fuentes hídricas y recoger los residuos."></button>
+                            <button type="button" class="btn btn-warning btn-interactivo btn-personaje" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Mueve a tu personaje con las flechas y salta con la barra de espacio para comenzar la aventura!"></button>
 
 
-                            <button type="button" class="btn btn-danger btn-interactivo btn-enemigo" data-bs-toggle="tooltip" data-bs-placement="top" title="Foco de Contaminación 👾: Representa el desperdicio y la basura que ensucian el agua."></button>
+                            <button type="button" class="btn btn-danger btn-interactivo btn-enemigo" data-bs-toggle="tooltip" data-bs-placement="top" title="Evita a estos enemigos para no perder vida. Salta sobre ellos para poder eliminarlos y limpiar el camino."></button>
 
-                            <button type="button" class="btn btn-info text-white btn-interactivo btn-plataforma" data-bs-toggle="tooltip" data-bs-placement="top" title="Plataforma de Reto 🔍: Salta aquí para resolver acertijos ambientales."></button>
+                            <button type="button" class="btn btn-info text-white btn-interactivo btn-plataforma" data-bs-toggle="tooltip" data-bs-placement="top" title="Salta sobre las plataformas para avanzar."></button>
 
+                        </div>
+
+                        <div>
+                            <img src="Img/Mundo/Rural/Enemigo01.png" alt="Tarjeta" class="img-fluid w-100 rounded-bottom">
                         </div>
 
                     </div>
@@ -164,7 +168,7 @@
                         </div>
       
                         <div class="modal-body p-4">
-                            <p>En este nivel... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, officiis. Fuga exercitationem dolor magni incidunt beatae, qui error, alias numquam hic modi molestiae deleniti fugiat odit libero laboriosam, tempora itaque!</p>
+                            <img src="Img/Mundo/Rural/Enemigo02.png" alt="Tarjeta" class="img-fluid w-100 rounded-bottom">
                         </div>
     
                     </div>
@@ -187,7 +191,7 @@
                         </div>
       
                         <div class="modal-body p-4">
-                            <p>En este nivel... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, officiis. Fuga exercitationem dolor magni incidunt beatae, qui error, alias numquam hic modi molestiae deleniti fugiat odit libero laboriosam, tempora itaque!</p>
+                            <img src="Img/Mundo/Rural/Enemigo03.png" alt="Tarjeta" class="img-fluid w-100 rounded-bottom">
                         </div>
     
                     </div>
@@ -292,7 +296,7 @@
             </div>
 
             <div class="text-center pt-4 mt-4 border-top border-secondary border-opacity-25 w-100">
-                <p class="small m-0 text-white-50"> © 2026 Splash Path - ¡Cuidemos el agua juntos! </p>
+                <p class="small m-0 text-white-50"> © 2026 Splash Path - ¡Cada gota cuenta, cada acción transforma! </p>
             </div>
 
         </div>
@@ -444,19 +448,15 @@
 
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- 2. Código JavaScript para activar los Tooltips en la página -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Busca todos los elementos que tengan data-bs-toggle="tooltip"
-      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-      
-      // Inicializa el Tooltip de Bootstrap para cada uno
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-      });
-    });
-  </script>
-</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+
     <script src="IniciarSesion.js"></script>
 
 </body>

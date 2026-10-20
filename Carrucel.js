@@ -9,12 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const posiciones = [
-    { rotate: -20, translateY: 40, zIndex: 1 },
-    { rotate: -12, translateY: 15, zIndex: 2 },
-    { rotate: -4,  translateY: -5, zIndex: 4 },
-    { rotate: 4,   translateY: -5, zIndex: 4 },
-    { rotate: 12,  translateY: 15, zIndex: 2 },
-    { rotate: 20,  translateY: 40, zIndex: 1 }
+    { rotate: -21, translateY: 45, zIndex: 1 },
+    { rotate: -14, translateY: 20, zIndex: 2 },
+    { rotate: -7,  translateY: 5,  zIndex: 3 },
+    { rotate: 0,   translateY: -10, zIndex: 5 },
+    { rotate: 7,   translateY: 5,  zIndex: 3 },
+    { rotate: 14,  translateY: 20, zIndex: 2 },
+    { rotate: 21,  translateY: 45, zIndex: 1 },
   ];
 
   function actualizarCarrusel() {
